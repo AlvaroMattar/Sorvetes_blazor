@@ -1,0 +1,30 @@
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesInfra/bin/Debug/net8.0/SorvetesInfra.deps.json
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesInfra/bin/Debug/net8.0/SorvetesInfra.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesInfra/bin/Debug/net8.0/SorvetesInfra.pdb
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesInfra/bin/Debug/net8.0/SorvetesModel.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesInfra/bin/Debug/net8.0/SorvetesModel.pdb
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesInfra/obj/Debug/net8.0/SorvetesInfra.csproj.AssemblyReference.cache
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesInfra/obj/Debug/net8.0/SorvetesInfra.GeneratedMSBuildEditorConfig.editorconfig
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesInfra/obj/Debug/net8.0/SorvetesInfra.AssemblyInfoInputs.cache
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesInfra/obj/Debug/net8.0/SorvetesInfra.AssemblyInfo.cs
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesInfra/obj/Debug/net8.0/SorvetesInfra.csproj.CoreCompileInputs.cache
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesInfra/obj/Debug/net8.0/Sorvetes.AA18B399.Up2Date
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesInfra/obj/Debug/net8.0/SorvetesInfra.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesInfra/obj/Debug/net8.0/refint/SorvetesInfra.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesInfra/obj/Debug/net8.0/SorvetesInfra.pdb
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesInfra/obj/Debug/net8.0/ref/SorvetesInfra.dll
+/home/aluno/Documentos/Sorvetes/SorvetesInfra/bin/Debug/net8.0/SorvetesInfra.deps.json
+/home/aluno/Documentos/Sorvetes/SorvetesInfra/bin/Debug/net8.0/SorvetesInfra.dll
+/home/aluno/Documentos/Sorvetes/SorvetesInfra/bin/Debug/net8.0/SorvetesInfra.pdb
+/home/aluno/Documentos/Sorvetes/SorvetesInfra/bin/Debug/net8.0/SorvetesModel.dll
+/home/aluno/Documentos/Sorvetes/SorvetesInfra/bin/Debug/net8.0/SorvetesModel.pdb
+/home/aluno/Documentos/Sorvetes/SorvetesInfra/obj/Debug/net8.0/SorvetesInfra.csproj.AssemblyReference.cache
+/home/aluno/Documentos/Sorvetes/SorvetesInfra/obj/Debug/net8.0/SorvetesInfra.GeneratedMSBuildEditorConfig.editorconfig
+/home/aluno/Documentos/Sorvetes/SorvetesInfra/obj/Debug/net8.0/SorvetesInfra.AssemblyInfoInputs.cache
+/home/aluno/Documentos/Sorvetes/SorvetesInfra/obj/Debug/net8.0/SorvetesInfra.AssemblyInfo.cs
+/home/aluno/Documentos/Sorvetes/SorvetesInfra/obj/Debug/net8.0/SorvetesInfra.csproj.CoreCompileInputs.cache
+/home/aluno/Documentos/Sorvetes/SorvetesInfra/obj/Debug/net8.0/SorvetesInfra.csproj.CopyComplete
+/home/aluno/Documentos/Sorvetes/SorvetesInfra/obj/Debug/net8.0/SorvetesInfra.dll
+/home/aluno/Documentos/Sorvetes/SorvetesInfra/obj/Debug/net8.0/refint/SorvetesInfra.dll
+/home/aluno/Documentos/Sorvetes/SorvetesInfra/obj/Debug/net8.0/SorvetesInfra.pdb
+/home/aluno/Documentos/Sorvetes/SorvetesInfra/obj/Debug/net8.0/ref/SorvetesInfra.dll

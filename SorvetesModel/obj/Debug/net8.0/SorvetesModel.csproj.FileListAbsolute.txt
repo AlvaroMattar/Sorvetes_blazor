@@ -1,0 +1,22 @@
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesModel/bin/Debug/net8.0/SorvetesModel.deps.json
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesModel/bin/Debug/net8.0/SorvetesModel.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesModel/bin/Debug/net8.0/SorvetesModel.pdb
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesModel/obj/Debug/net8.0/SorvetesModel.GeneratedMSBuildEditorConfig.editorconfig
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesModel/obj/Debug/net8.0/SorvetesModel.AssemblyInfoInputs.cache
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesModel/obj/Debug/net8.0/SorvetesModel.AssemblyInfo.cs
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesModel/obj/Debug/net8.0/SorvetesModel.csproj.CoreCompileInputs.cache
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesModel/obj/Debug/net8.0/SorvetesModel.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesModel/obj/Debug/net8.0/refint/SorvetesModel.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesModel/obj/Debug/net8.0/SorvetesModel.pdb
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesModel/obj/Debug/net8.0/ref/SorvetesModel.dll
+/home/aluno/Documentos/Sorvetes/SorvetesModel/bin/Debug/net8.0/SorvetesModel.deps.json
+/home/aluno/Documentos/Sorvetes/SorvetesModel/bin/Debug/net8.0/SorvetesModel.dll
+/home/aluno/Documentos/Sorvetes/SorvetesModel/bin/Debug/net8.0/SorvetesModel.pdb
+/home/aluno/Documentos/Sorvetes/SorvetesModel/obj/Debug/net8.0/SorvetesModel.GeneratedMSBuildEditorConfig.editorconfig
+/home/aluno/Documentos/Sorvetes/SorvetesModel/obj/Debug/net8.0/SorvetesModel.AssemblyInfoInputs.cache
+/home/aluno/Documentos/Sorvetes/SorvetesModel/obj/Debug/net8.0/SorvetesModel.AssemblyInfo.cs
+/home/aluno/Documentos/Sorvetes/SorvetesModel/obj/Debug/net8.0/SorvetesModel.csproj.CoreCompileInputs.cache
+/home/aluno/Documentos/Sorvetes/SorvetesModel/obj/Debug/net8.0/SorvetesModel.dll
+/home/aluno/Documentos/Sorvetes/SorvetesModel/obj/Debug/net8.0/refint/SorvetesModel.dll
+/home/aluno/Documentos/Sorvetes/SorvetesModel/obj/Debug/net8.0/SorvetesModel.pdb
+/home/aluno/Documentos/Sorvetes/SorvetesModel/obj/Debug/net8.0/ref/SorvetesModel.dll

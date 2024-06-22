@@ -1,0 +1,71 @@
+﻿@page "/sorvete/{Filtro?}"
+@using System.Net.Http
+@using System.Text.Json
+@using SorvetesFront.Helpers
+@using SorvetesFront.Models
+@inject Api api
+
+<PageTitle>Lista de Sorvetes</PageTitle>
+
+<div class="maingrid text-center text-white p-md-5 mb-4">
+    <h1 class="bg-dark bg-opacity-50 m-5">LISTA DE TODOS OS SORVETES</h1>
+    <div class="menu m-5">
+        
+@if (Objetos == null)
+{
+    <p><strong>Carregando...</strong></p>
+}
+else
+{
+    <h1 class="m-5">OLHA O SORVEEETE!</h1>
+
+    <div>
+        <form class="m-3" action="@($"/sorvete/{Filtro}")" method="get">
+            <label class="m-1">FILTRAR POR SABOR: </label>
+            <input class="inputext m-1" type="text" @bind="Filtro">
+            <label class="m-1">QUANTIDADE Min: </label>
+            <input class="inputext m-1 col-1" type="number" @bind="FiltroQ">
+        </form>
+    </div>
+    <table class="tablefinal text-white table bg-dark">
+        <thead>
+            <tr>
+                <th scope="col">Sabor</th>
+                <th scope="col">Quantidade</th>
+                <th scope="col">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach(var obj in Objetos)
+        {
+            @if(obj.Sabor == Filtro || Filtro == "" || Filtro == null)
+            {
+                @if(obj.Quantidade >= FiltroQ || FiltroQ == null){
+                    <tr>
+                        <td>@obj.Sabor</td>
+                        <td>@obj.Quantidade</td>
+                        <td>
+                            <a href=@($"/add_sorvete/{Acoes.Alterar}/{obj.Id}") class="btn btn-warning" style="text-shadow: 1px 1px white;">Alterar</a>
+                            <a href=@($"/add_sorvete/{Acoes.Excluir}/{obj.Id}") class="btn btn-danger">Excluir</a>
+                        </td>
+                    </tr>
+                }
+            }
+        }      
+        </tbody>  
+    </table>
+}
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string? Filtro { get; set; }
+    public int? FiltroQ { get; set; }
+    private IList<Sorvete>? Objetos { get; set; } = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Objetos = await api.GetAsync<Sorvete>("/api/sorvete");
+    }
+}

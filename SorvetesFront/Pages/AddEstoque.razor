@@ -1,0 +1,280 @@
+@page "/add_estoque/{Acao}/{Id?}"
+@using System.Net.Http
+@using System.Text.Json
+@using SorvetesFront.Helpers
+@using SorvetesFront.Models
+@inject Api api
+
+<PageTitle>Estoque do Carrinho</PageTitle>
+
+<div class="maingrid text-center text-white p-md-5 mb-4">
+    <h1 class="bg-dark bg-opacity-50 m-5">COLOQUE SORVETE EM UM CARRINHO</h1>
+    <div class="menu m-5">
+        
+@if (Objeto == null)
+{
+    <p><strong>Carregando...</strong></p>
+}
+else
+{
+    <h1 class="m-2">QUAL SERÁ?!</h1>
+    <img class="imgwithback m-3" src="./css/imgs/icecream2.jpg" width="300px">
+    <EditForm Model="Objeto" OnSubmit="Salvar" FormName="EstoqueForm">
+        <label class="m-3">CARRINHO PARA SER USADO</label><br>
+
+        <table class="tablefinal text-white table bg-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Dono(a)</th>
+                    <th scope="col">Escolher</th>
+                </tr>
+            </thead>
+            <tbody>
+                <InputRadioGroup Title="Carrinho" @bind-Value="Objeto.Carrinho" Validate="@Objeto.Validar">
+            @foreach(var objc in ObjetosC)
+            {
+                <tr>
+                    <td>@objc.Nome</td>
+                    <td>@achaNomeDono(objc.Dono)</td>
+                    <td>
+                        <InputRadio Title="Carrinho" Value="objc.Id" Validate="@Objeto.Validar" />
+                    </td>
+                </tr>
+            }
+                </InputRadioGroup>
+            </tbody>  
+        </table>
+
+        <label class="m-3">SORVETE A SER ARMAZENADO</label><br>
+
+        <table class="tablefinal text-white table bg-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Sabor</th>
+                    <th scope="col">Quantidade</th>
+                    <th scope="col">Escolher</th>
+                </tr>
+            </thead>
+            <tbody>
+                <InputRadioGroup Title="Sorvete" @bind-Value="Objeto.Sorvete" Validate="@Objeto.Validar">
+            @foreach(var objso in ObjetosSo)
+            {
+                <tr>
+                    <td>@objso.Sabor</td>
+                    <td>@objso.Quantidade</td>
+                    <td>
+                        <InputRadio Title="Sorvete" Value="objso.Id" Validate="@Objeto.Validar" />
+                    </td>
+                </tr>
+            }
+                </InputRadioGroup>
+            </tbody>  
+        </table>
+
+        <div>    
+            @if (ComparaAcao(Acoes.Inserir))
+            {        
+                <button class="btn btn-primary m-3 btnedit" type="submit">Inserir</button>
+            }
+            else if (ComparaAcao(Acoes.Excluir))
+            {        
+                <button class="btn btn-danger m-3 btnedit" type="submit">Desabastecer</button>
+            }
+        </div>
+    </EditForm>
+    @if (@mensagem != null)
+    {
+        <div class="alert alert-primary m-4 text-white" role="alert">
+            <h1>@mensagem</h1>
+        </div>
+    }
+}
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string? Acao { get; set; }
+
+    [Parameter]
+    public string? Id { get; set; }
+    private IList<Sorveteiro>? ObjetosS { get; set; } = null;
+    private IList<Carrinho>? ObjetosC { get; set; } = null;
+    private IList<Sorvete>? ObjetosSo { get; set; } = null;
+    private string achaNomeDono(string id){
+
+        foreach (Sorveteiro objs in ObjetosS){
+            if(objs.Id == id){
+                return objs.Nome;
+            }
+        }
+
+        return "Sem Dono.";
+    }
+    private string? mensagem = null;
+
+    [SupplyParameterFromForm]
+    private Estoque? Objeto { get; set; }
+
+    private Sorvete? ObjetoSo { get; set; }
+    private async Task ApresentarMensagem(string mensagem, int duracao = 2)
+    {
+        this.mensagem = mensagem;
+
+        var apresentarAte = DateTime.Now.AddSeconds(duracao);
+
+        StateHasChanged();
+
+        while (DateTime.Now < apresentarAte)
+            await Task.Delay(1000);
+    }
+    private bool ComparaAcao(params string[] acoes)
+    {
+        foreach (var acaoAtual in acoes)
+            if (Acao.Equals(acaoAtual, StringComparison.OrdinalIgnoreCase))
+                return true;
+        
+        return false;
+    }
+    private async Task Inserir()
+    {
+        var httpClient = new HttpClient();
+       
+        using StringContent jsonContent = new(
+            JsonSerializer.Serialize(Objeto),
+            System.Text.Encoding.UTF8,
+            "application/json"
+        );
+
+        using HttpResponseMessage response = await httpClient.PostAsync(
+                $"http://localhost:5152/api/estoque",
+                jsonContent
+            );
+
+        response.EnsureSuccessStatusCode();
+
+        await ApresentarMensagem("Estoque do carrinho inserido com sucesso!");
+        await ApresentarMensagem(null);
+    }
+    private async Task AlterarQuantidade()
+    {
+        foreach (Sorvete obs in ObjetosSo){
+            if(obs.Id == Objeto.Sorvete){
+                ObjetoSo = obs;
+                break;
+            }
+        }
+
+        Objeto.Quantidade = ObjetoSo.Quantidade;
+
+        ObjetoSo.Quantidade = 0;
+
+        var httpClient = new HttpClient();
+       
+        using StringContent jsonContent = new(
+            JsonSerializer.Serialize(ObjetoSo),
+            System.Text.Encoding.UTF8,
+            "application/json"
+        );
+
+        using HttpResponseMessage response = await httpClient.PutAsync(
+                $"http://localhost:5152/api/sorvete/{Objeto.Sorvete}",
+                jsonContent
+            );
+
+        response.EnsureSuccessStatusCode();
+
+        await ApresentarMensagem($"Sorvete armazenado com sucesso! {Objeto.Quantidade} Unidades!");
+    }
+    private async Task Excluir()
+    {
+        var httpClient = new HttpClient();
+       
+        using HttpResponseMessage response = await httpClient.DeleteAsync(
+            $"http://localhost:5152/api/estoque/{Id}"
+        );
+
+        response.EnsureSuccessStatusCode();
+
+        await ApresentarMensagem("Estoque do carrinho excluído com sucesso!");
+        await ApresentarMensagem(null);
+    }
+    private async Task RetornarQuantidade()
+    {
+        foreach (Sorvete obs in ObjetosSo){
+            if(obs.Id == Objeto.Sorvete){
+                ObjetoSo = obs;
+                break;
+            }
+        }
+
+        ObjetoSo.Quantidade = Objeto.Quantidade;
+
+        var httpClient = new HttpClient();
+       
+        using StringContent jsonContent = new(
+            JsonSerializer.Serialize(ObjetoSo),
+            System.Text.Encoding.UTF8,
+            "application/json"
+        );
+
+        using HttpResponseMessage response = await httpClient.PutAsync(
+                $"http://localhost:5152/api/sorvete/{Objeto.Sorvete}",
+                jsonContent
+            );
+
+        response.EnsureSuccessStatusCode();
+
+        await ApresentarMensagem($"Sorvete desabastecido com sucesso! {ObjetoSo.Quantidade} Unidades!");
+    }
+    private async Task Salvar()
+    {
+        if (Objeto.Validar())
+        {
+            if (ComparaAcao(Acoes.Inserir))
+            {
+                await AlterarQuantidade();
+                await Inserir();
+            }
+            else if (ComparaAcao(Acoes.Excluir))
+            {
+                await RetornarQuantidade();
+                await Excluir();
+            }
+                
+        }else{
+            mensagem = "Operação falhou.";
+        }
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        if (Acao.Equals(Acoes.Inserir, StringComparison.OrdinalIgnoreCase))
+        {
+            ObjetosS = await api.GetAsync<Sorveteiro>("/api/sorveteiro");
+            ObjetosC = await api.GetAsync<Carrinho>("/api/carrinho");
+            ObjetosSo = await api.GetAsync<Sorvete>("/api/sorvete");
+            Objeto = new Estoque();
+            ObjetoSo = new Sorvete();
+            return;
+        }
+
+        ObjetosS = await api.GetAsync<Sorveteiro>("/api/sorveteiro");
+        ObjetosC = await api.GetAsync<Carrinho>("/api/carrinho");
+        ObjetosSo = await api.GetAsync<Sorvete>("/api/sorvete");
+        ObjetoSo = new Sorvete();
+
+        var client = new HttpClient();
+       
+        using HttpResponseMessage response = await client.GetAsync($"http://localhost:5152/api/estoque/{Id}");
+        response.EnsureSuccessStatusCode();
+        string responseBody = await response.Content.ReadAsStringAsync();
+
+        var options = new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        };
+
+        Objeto = JsonSerializer.Deserialize<Estoque>(responseBody, options);
+    }
+}

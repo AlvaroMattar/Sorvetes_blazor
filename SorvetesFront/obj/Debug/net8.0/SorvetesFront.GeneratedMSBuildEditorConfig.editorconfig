@@ -1,0 +1,75 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = SorvetesFront
+build_property.RootNamespace = SorvetesFront
+build_property.ProjectDir = /home/aluno/Documentos/Sorvetes/SorvetesFront/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/aluno/Documentos/Sorvetes/SorvetesFront
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/aluno/Documentos/Sorvetes/SorvetesFront/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/aluno/Documentos/Sorvetes/SorvetesFront/Pages/AddCarrinho.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkQ2FycmluaG8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/aluno/Documentos/Sorvetes/SorvetesFront/Pages/AddEstoque.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkRXN0b3F1ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/aluno/Documentos/Sorvetes/SorvetesFront/Pages/AddSorvete.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkU29ydmV0ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/aluno/Documentos/Sorvetes/SorvetesFront/Pages/AddSorveteiro.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkU29ydmV0ZWlyby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/aluno/Documentos/Sorvetes/SorvetesFront/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/aluno/Documentos/Sorvetes/SorvetesFront/Pages/VerCarrinho.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVmVyQ2FycmluaG8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/aluno/Documentos/Sorvetes/SorvetesFront/Pages/VerEstoque.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVmVyRXN0b3F1ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/aluno/Documentos/Sorvetes/SorvetesFront/Pages/VerSorvete.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVmVyU29ydmV0ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/aluno/Documentos/Sorvetes/SorvetesFront/Pages/VerSorveteiro.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVmVyU29ydmV0ZWlyby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/aluno/Documentos/Sorvetes/SorvetesFront/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/aluno/Documentos/Sorvetes/SorvetesFront/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ch0e4zabar
+
+[/home/aluno/Documentos/Sorvetes/SorvetesFront/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-oxeh283jjp

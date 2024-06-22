@@ -1,0 +1,122 @@
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/appsettings.Development.json
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/appsettings.json
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/SorvetesApi.exe
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/SorvetesApi.deps.json
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/SorvetesApi.runtimeconfig.json
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/SorvetesApi.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/SorvetesApi.pdb
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/Dapper.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/Microsoft.Data.Sqlite.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/Microsoft.OpenApi.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/SQLitePCLRaw.batteries_v2.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/SQLitePCLRaw.core.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/SQLitePCLRaw.provider.e_sqlite3.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/browser-wasm/nativeassets/net8.0/e_sqlite3.a
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/linux-arm/native/libe_sqlite3.so
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/linux-arm64/native/libe_sqlite3.so
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/linux-armel/native/libe_sqlite3.so
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/linux-mips64/native/libe_sqlite3.so
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/linux-musl-arm/native/libe_sqlite3.so
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/linux-musl-arm64/native/libe_sqlite3.so
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/linux-musl-x64/native/libe_sqlite3.so
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/linux-ppc64le/native/libe_sqlite3.so
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/linux-s390x/native/libe_sqlite3.so
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/linux-x64/native/libe_sqlite3.so
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/linux-x86/native/libe_sqlite3.so
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/maccatalyst-x64/native/libe_sqlite3.dylib
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/osx-arm64/native/libe_sqlite3.dylib
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/osx-x64/native/libe_sqlite3.dylib
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/win-arm/native/e_sqlite3.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/win-arm64/native/e_sqlite3.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/win-x64/native/e_sqlite3.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/win-x86/native/e_sqlite3.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/SorvetesInfra.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/SorvetesModel.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/SorvetesModel.pdb
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/bin/Debug/net8.0/SorvetesInfra.pdb
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/obj/Debug/net8.0/SorvetesApi.csproj.AssemblyReference.cache
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/obj/Debug/net8.0/SorvetesApi.GeneratedMSBuildEditorConfig.editorconfig
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/obj/Debug/net8.0/SorvetesApi.AssemblyInfoInputs.cache
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/obj/Debug/net8.0/SorvetesApi.AssemblyInfo.cs
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/obj/Debug/net8.0/SorvetesApi.csproj.CoreCompileInputs.cache
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/obj/Debug/net8.0/SorvetesApi.MvcApplicationPartsAssemblyInfo.cs
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/obj/Debug/net8.0/SorvetesApi.MvcApplicationPartsAssemblyInfo.cache
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/obj/Debug/net8.0/staticwebassets.build.json
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/obj/Debug/net8.0/staticwebassets.development.json
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/obj/Debug/net8.0/staticwebassets/msbuild.SorvetesApi.Microsoft.AspNetCore.StaticWebAssets.props
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/obj/Debug/net8.0/staticwebassets/msbuild.build.SorvetesApi.props
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.SorvetesApi.props
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.SorvetesApi.props
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/obj/Debug/net8.0/staticwebassets.pack.json
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/obj/Debug/net8.0/scopedcss/bundle/SorvetesApi.styles.css
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/obj/Debug/net8.0/Sorvetes.27237993.Up2Date
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/obj/Debug/net8.0/SorvetesApi.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/obj/Debug/net8.0/refint/SorvetesApi.dll
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/obj/Debug/net8.0/SorvetesApi.pdb
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/obj/Debug/net8.0/SorvetesApi.genruntimeconfig.cache
+E:/0_FRA/Faculdade/ADS3/PROGRAMAÇÃO_WEB_AVANÇADA/EX RASCUNHO/Sorvetes/SorvetesApi/obj/Debug/net8.0/ref/SorvetesApi.dll
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/appsettings.Development.json
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/appsettings.json
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/SorvetesApi
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/SorvetesApi.deps.json
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/SorvetesApi.runtimeconfig.json
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/SorvetesApi.dll
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/SorvetesApi.pdb
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/Dapper.dll
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/Microsoft.Data.Sqlite.dll
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/SQLitePCLRaw.batteries_v2.dll
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/SQLitePCLRaw.core.dll
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/SQLitePCLRaw.provider.e_sqlite3.dll
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/browser-wasm/nativeassets/net8.0/e_sqlite3.a
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/linux-arm/native/libe_sqlite3.so
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/linux-arm64/native/libe_sqlite3.so
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/linux-armel/native/libe_sqlite3.so
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/linux-mips64/native/libe_sqlite3.so
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/linux-musl-arm/native/libe_sqlite3.so
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/linux-musl-arm64/native/libe_sqlite3.so
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/linux-musl-x64/native/libe_sqlite3.so
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/linux-ppc64le/native/libe_sqlite3.so
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/linux-s390x/native/libe_sqlite3.so
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/linux-x64/native/libe_sqlite3.so
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/linux-x86/native/libe_sqlite3.so
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/maccatalyst-x64/native/libe_sqlite3.dylib
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/osx-arm64/native/libe_sqlite3.dylib
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/osx-x64/native/libe_sqlite3.dylib
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/win-arm/native/e_sqlite3.dll
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/win-arm64/native/e_sqlite3.dll
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/win-x64/native/e_sqlite3.dll
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/runtimes/win-x86/native/e_sqlite3.dll
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/SorvetesInfra.dll
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/SorvetesModel.dll
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/SorvetesModel.pdb
+/home/aluno/Documentos/Sorvetes/SorvetesApi/bin/Debug/net8.0/SorvetesInfra.pdb
+/home/aluno/Documentos/Sorvetes/SorvetesApi/obj/Debug/net8.0/SorvetesApi.csproj.AssemblyReference.cache
+/home/aluno/Documentos/Sorvetes/SorvetesApi/obj/Debug/net8.0/SorvetesApi.GeneratedMSBuildEditorConfig.editorconfig
+/home/aluno/Documentos/Sorvetes/SorvetesApi/obj/Debug/net8.0/SorvetesApi.AssemblyInfoInputs.cache
+/home/aluno/Documentos/Sorvetes/SorvetesApi/obj/Debug/net8.0/SorvetesApi.AssemblyInfo.cs
+/home/aluno/Documentos/Sorvetes/SorvetesApi/obj/Debug/net8.0/SorvetesApi.csproj.CoreCompileInputs.cache
+/home/aluno/Documentos/Sorvetes/SorvetesApi/obj/Debug/net8.0/SorvetesApi.MvcApplicationPartsAssemblyInfo.cs
+/home/aluno/Documentos/Sorvetes/SorvetesApi/obj/Debug/net8.0/SorvetesApi.MvcApplicationPartsAssemblyInfo.cache
+/home/aluno/Documentos/Sorvetes/SorvetesApi/obj/Debug/net8.0/staticwebassets.build.json
+/home/aluno/Documentos/Sorvetes/SorvetesApi/obj/Debug/net8.0/staticwebassets.development.json
+/home/aluno/Documentos/Sorvetes/SorvetesApi/obj/Debug/net8.0/staticwebassets/msbuild.SorvetesApi.Microsoft.AspNetCore.StaticWebAssets.props
+/home/aluno/Documentos/Sorvetes/SorvetesApi/obj/Debug/net8.0/staticwebassets/msbuild.build.SorvetesApi.props
+/home/aluno/Documentos/Sorvetes/SorvetesApi/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.SorvetesApi.props
+/home/aluno/Documentos/Sorvetes/SorvetesApi/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.SorvetesApi.props
+/home/aluno/Documentos/Sorvetes/SorvetesApi/obj/Debug/net8.0/staticwebassets.pack.json
+/home/aluno/Documentos/Sorvetes/SorvetesApi/obj/Debug/net8.0/scopedcss/bundle/SorvetesApi.styles.css
+/home/aluno/Documentos/Sorvetes/SorvetesApi/obj/Debug/net8.0/SorvetesApi.csproj.CopyComplete
+/home/aluno/Documentos/Sorvetes/SorvetesApi/obj/Debug/net8.0/SorvetesApi.dll
+/home/aluno/Documentos/Sorvetes/SorvetesApi/obj/Debug/net8.0/refint/SorvetesApi.dll
+/home/aluno/Documentos/Sorvetes/SorvetesApi/obj/Debug/net8.0/SorvetesApi.pdb
+/home/aluno/Documentos/Sorvetes/SorvetesApi/obj/Debug/net8.0/SorvetesApi.genruntimeconfig.cache
+/home/aluno/Documentos/Sorvetes/SorvetesApi/obj/Debug/net8.0/ref/SorvetesApi.dll

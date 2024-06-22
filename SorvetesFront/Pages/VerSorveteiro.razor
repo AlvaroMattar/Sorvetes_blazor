@@ -1,0 +1,66 @@
+﻿@page "/sorveteiro/{Filtro?}"
+@using System.Net.Http
+@using System.Text.Json
+@using SorvetesFront.Helpers
+@using SorvetesFront.Models
+@inject Api api
+
+<PageTitle>Lista de Sorveteiros</PageTitle>
+
+<div class="maingrid text-center text-white p-md-5 mb-4">
+    <h1 class="bg-dark bg-opacity-50 m-5">LISTA DE TODOS OS SORVETEIROS</h1>
+    <div class="menu m-5">
+        
+@if (Objetos == null)
+{
+    <p><strong>Carregando...</strong></p>
+}
+else
+{
+    <h1 class="m-5">OLHA O SORVEEETEIROOOOO!</h1>
+
+    <div>
+        <form class="m-3" action="@($"/sorveteiro/{Filtro}")" method="get">
+            <label class="m-1">FILTRAR POR NOME: </label>
+            <input class="inputext m-1" type="text" @bind="Filtro">
+        </form>
+    </div>
+    <table class="tablefinal text-white table bg-dark">
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach(var obj in Objetos)
+        {
+            @if(obj.Nome == Filtro || Filtro == "" || Filtro == null)
+            {
+                <tr>
+                    <td>@obj.Nome</td>
+                    <td>@obj.Email</td>
+                    <td>
+                        <a href=@($"/add_sorveteiro/{Acoes.Alterar}/{obj.Id}") class="btn btn-warning" style="text-shadow: 1px 1px white;">Alterar</a>
+                        <a href=@($"/add_sorveteiro/{Acoes.Excluir}/{obj.Id}") class="btn btn-danger">Excluir</a>
+                    </td>
+                </tr>
+            }
+        }      
+        </tbody>  
+    </table>
+}
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string? Filtro { get; set; }
+    private IList<Sorveteiro>? Objetos { get; set; } = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Objetos = await api.GetAsync<Sorveteiro>("/api/sorveteiro");
+    }
+}

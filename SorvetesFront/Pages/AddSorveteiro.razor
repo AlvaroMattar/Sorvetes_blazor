@@ -1,0 +1,169 @@
+@page "/add_sorveteiro/{Acao}/{Id?}"
+@using System.Net.Http
+@using System.Text.Json
+@using SorvetesFront.Helpers
+@using SorvetesFront.Models
+
+<PageTitle>Adicionar Sorveteiro</PageTitle>
+
+<div class="maingrid text-center text-white p-md-5 mb-4">
+    <h1 class="bg-dark bg-opacity-50 m-5">CADASTRE UM SORVETEIRO</h1>
+    <div class="menu m-5">
+        
+@if (Objeto == null)
+{
+    <p><strong>Carregando...</strong></p>
+}
+else
+{
+    <h1 class="m-2">QUEM SERÁ?</h1>
+    <img class="imgwithback m-3" src="./css/imgs/sorveteiro.jpg" width="300px">
+    <EditForm Model="Objeto" OnSubmit="Salvar" FormName="SorveteiroForm">
+        <label>NOME</label><br>
+        <InputText class="inputext col-3 text-center m-1" Title="Nome" @bind-Value="Objeto.Nome" Validate="@Objeto.Validar" /><br>
+        <label>EMAIL</label><br>
+        <InputText class="inputext col-3 text-center m-1" Title="Email" @bind-Value="Objeto.Email" Validate="@Objeto.Validar" /><br>
+        <div>    
+            @if (ComparaAcao(Acoes.Alterar))
+            {        
+                <button class="btn btn-warning m-3 btnedit" type="submit">Alterar</button>
+            }
+            else if (ComparaAcao(Acoes.Inserir))
+            {        
+                <button class="btn btn-primary m-3 btnedit" type="submit">Inserir</button>
+            }
+            else if (ComparaAcao(Acoes.Excluir))
+            {        
+                <button class="btn btn-danger m-3 btnedit" type="submit">Excluir</button>
+            }
+        </div>
+    </EditForm>
+    @if (@mensagem != null)
+    {
+        <div class="alert alert-primary m-4 text-white" role="alert">
+            <h1>@mensagem</h1>
+        </div>
+    }
+}
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string? Acao { get; set; }
+
+    [Parameter]
+    public string? Id { get; set; }
+    private string? mensagem = null;
+
+    [SupplyParameterFromForm]
+    private Sorveteiro? Objeto { get; set; }
+
+    private async Task ApresentarMensagem(string mensagem, int duracao = 2)
+    {
+        this.mensagem = mensagem;
+
+        var apresentarAte = DateTime.Now.AddSeconds(duracao);
+
+        StateHasChanged();
+
+        while (DateTime.Now < apresentarAte)
+            await Task.Delay(1000);
+    }
+    private bool ComparaAcao(params string[] acoes)
+    {
+        foreach (var acaoAtual in acoes)
+            if (Acao.Equals(acaoAtual, StringComparison.OrdinalIgnoreCase))
+                return true;
+        
+        return false;
+    }
+    private async Task Inserir()
+    {
+        var httpClient = new HttpClient();
+       
+        using StringContent jsonContent = new(
+            JsonSerializer.Serialize(Objeto),
+            System.Text.Encoding.UTF8,
+            "application/json"
+        );
+
+        using HttpResponseMessage response = await httpClient.PostAsync(
+                $"http://localhost:5152/api/sorveteiro",
+                jsonContent
+            );
+
+        response.EnsureSuccessStatusCode();
+
+        await ApresentarMensagem("Sorveteiro cadastrado com sucesso!");
+        await ApresentarMensagem(null);
+    }
+    private async Task Alterar()
+    {
+        var httpClient = new HttpClient();
+       
+        using StringContent jsonContent = new(
+            JsonSerializer.Serialize(Objeto),
+            System.Text.Encoding.UTF8,
+            "application/json"
+        );
+
+        using HttpResponseMessage response = await httpClient.PutAsync(
+                $"http://localhost:5152/api/sorveteiro/{Id}",
+                jsonContent
+            );
+
+        response.EnsureSuccessStatusCode();
+
+        await ApresentarMensagem($"Sorveteiro alterado com sucesso!");
+        await ApresentarMensagem(null);
+    }
+    private async Task Excluir()
+    {
+        var httpClient = new HttpClient();
+       
+        using HttpResponseMessage response = await httpClient.DeleteAsync(
+            $"http://localhost:5152/api/sorveteiro/{Id}"
+        );
+
+        response.EnsureSuccessStatusCode();
+
+        await ApresentarMensagem("Sorveteiro excluído com sucesso!");
+        await ApresentarMensagem(null);
+    }
+    private async Task Salvar()
+    {
+        if (Objeto.Validar())
+        {
+            if (ComparaAcao(Acoes.Alterar))
+                await Alterar();
+            else if (ComparaAcao(Acoes.Inserir))
+                await Inserir();
+            else if (ComparaAcao(Acoes.Excluir))
+                await Excluir();
+        }else{
+            mensagem = "Operação falhou.";
+        }
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        if (Acao.Equals(Acoes.Inserir, StringComparison.OrdinalIgnoreCase))
+        {
+            Objeto = new Sorveteiro();
+            return;
+        }
+
+        var client = new HttpClient();
+       
+        using HttpResponseMessage response = await client.GetAsync($"http://localhost:5152/api/sorveteiro/{Id}");
+        response.EnsureSuccessStatusCode();
+        string responseBody = await response.Content.ReadAsStringAsync();
+
+        var options = new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        };
+
+        Objeto = JsonSerializer.Deserialize<Sorveteiro>(responseBody, options);
+    }
+}

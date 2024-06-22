@@ -1,0 +1,79 @@
+﻿<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">Sorvetes</a>
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="add_sorvete/Inserir">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Adicionar Sorvete
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="add_sorveteiro/Inserir">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Adicionar Sorveteiro
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="add_carrinho/Inserir">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Adicionar Carrinho
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <div class="nav-link">
+                <hr width="100%" style="color: white;">
+            </div>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="sorvete">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Sorvetes
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="sorveteiro">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Sorveteiros
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="carrinho">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Carrinhos
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="estoque">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Estoque
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <div class="nav-link">
+                <hr width="100%" style="color: white;">
+            </div>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="add_estoque/Inserir">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Estocar
+            </NavLink>
+        </div>
+    </nav>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

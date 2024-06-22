@@ -1,0 +1,95 @@
+﻿@page "/estoque/{Filtro?}"
+@using System.Net.Http
+@using System.Text.Json
+@using SorvetesFront.Helpers
+@using SorvetesFront.Models
+@inject Api api
+
+<PageTitle>Estoque</PageTitle>
+
+<div class="maingrid text-center text-white p-md-5 mb-4">
+    <h1 class="bg-dark bg-opacity-50 m-5">LISTA DO ARMAZENAMENTO DO SORVETE</h1>
+    <div class="menu m-5">
+        
+@if (ObjetosE == null)
+{
+    <p><strong>Carregando...</strong></p>
+}
+else
+{
+    <h1 class="m-5">OLHA O ESTOQUEEE!</h1>
+
+    <div>
+        <form class="m-3" action="@($"/estoque/{Filtro}")" method="get">
+            <label class="m-1">FILTRAR POR CARRINHO: </label>
+            <input class="inputext m-1" type="text" @bind="Filtro">
+            <label class="m-1">QUANTIDADE Min: </label>
+            <input class="inputext m-1 col-1" type="number" @bind="FiltroQ">
+        </form>
+    </div>
+    <table class="tablefinal text-white table bg-dark">
+        <thead>
+            <tr>
+                <th scope="col">Carrinho</th>
+                <th scope="col">Sorvete</th>
+                <th scope="col">Quantidade</th>
+                <th scope="col">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach(var obje in ObjetosE)
+        {
+            @if(achaNomeCarrinho(obje.Carrinho) == Filtro || Filtro == "" || Filtro == null)
+            {
+                @if(obje.Quantidade >= FiltroQ || FiltroQ == null){
+                    <tr>
+                        <td>@achaNomeCarrinho(obje.Carrinho)</td>
+                        <td>@achaSaborSorvete(obje.Sorvete)</td>
+                        <td>@obje.Quantidade</td>
+                        <td>
+                            <a href=@($"/add_estoque/{Acoes.Excluir}/{obje.Id}") class="btn btn-danger">Desabastecer</a>
+                        </td>
+                    </tr>
+                }
+            }
+        }      
+        </tbody>  
+    </table>
+}
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string? Filtro { get; set; }
+    public int? FiltroQ { get; set; }
+    private IList<Sorvete>? ObjetosSo { get; set; } = null;
+    private IList<Sorveteiro>? ObjetosS { get; set; } = null;
+    private IList<Carrinho>? ObjetosC { get; set; } = null;
+    private IList<Estoque>? ObjetosE { get; set; } = null;
+
+    private string achaNomeCarrinho(string id){
+        foreach (Carrinho objc in ObjetosC){
+            if(objc.Id == id){
+                return objc.Nome;
+            }
+        }
+        return "Sem Nome.";
+    }
+    private string achaSaborSorvete(string id){
+        foreach (Sorvete objso in ObjetosSo){
+            if(objso.Id == id){
+                return objso.Sabor;
+            }
+        }
+        return "Sem Sabor.";
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        ObjetosSo = await api.GetAsync<Sorvete>("/api/sorvete");
+        ObjetosS = await api.GetAsync<Sorveteiro>("/api/sorveteiro");    
+        ObjetosC = await api.GetAsync<Carrinho>("/api/carrinho");
+        ObjetosE = await api.GetAsync<Estoque>("/api/estoque");
+    }
+}

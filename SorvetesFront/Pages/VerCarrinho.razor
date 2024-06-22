@@ -1,0 +1,80 @@
+﻿@page "/carrinho/{Filtro?}"
+@using System.Net.Http
+@using System.Text.Json
+@using SorvetesFront.Helpers
+@using SorvetesFront.Models
+@inject Api api
+
+<PageTitle>Lista de Carrinhos</PageTitle>
+
+<div class="maingrid text-center text-white p-md-5 mb-4">
+    <h1 class="bg-dark bg-opacity-50 m-5">LISTA DE TODOS OS CARRINHOS</h1>
+    <div class="menu m-5">
+        
+@if (Objetos == null)
+{
+    <p><strong>Carregando...</strong></p>
+}
+else
+{
+    <h1 class="m-5">OLHA O CARRINHOOOOO!</h1>
+
+    <div>
+        <form class="m-3" action="@($"/carrinho/{Filtro}")" method="get">
+            <label class="m-1">FILTRAR POR DONO: </label>
+            <input class="inputext m-1" type="text" @bind="Filtro">
+        </form>
+    </div>
+    <table class="tablefinal text-white table bg-dark">
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Dono(a)</th>
+                <th scope="col">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach(var obj in Objetos)
+        {
+            @if(achaNomeDono(obj.Dono) == Filtro || Filtro == "" || Filtro == null)
+            {
+                <tr>
+                    <td>@obj.Nome</td>
+                    <td>@achaNomeDono(obj.Dono)</td>
+                    <td>
+                        <a href=@($"/add_carrinho/{Acoes.Alterar}/{obj.Id}") class="btn btn-warning" style="text-shadow: 1px 1px white;">Alterar</a>
+                        <a href=@($"/add_carrinho/{Acoes.Excluir}/{obj.Id}") class="btn btn-danger">Excluir</a>
+                    </td>
+                </tr>
+            }
+        }      
+        </tbody>  
+    </table>
+}
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string? Filtro { get; set; }
+    private IList<Carrinho>? Objetos { get; set; } = null;
+
+    private IList<Sorveteiro>? ObjetosS { get; set; } = null;
+
+    private string achaNomeDono(string id){
+
+        foreach (Sorveteiro obj in ObjetosS){
+            if(obj.Id == id){
+                return obj.Nome;
+            }
+        }
+
+        return "Sem Dono.";
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Objetos = await api.GetAsync<Carrinho>("/api/carrinho");
+        ObjetosS = await api.GetAsync<Sorveteiro>("/api/sorveteiro");
+    }
+}
